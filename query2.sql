@@ -1,0 +1,1 @@
+SELECT b.title,p.name FROM books b,publisher p WHERE b.publisher IN (SELECT p.id FROM publisher WHERE p.country='UK');
