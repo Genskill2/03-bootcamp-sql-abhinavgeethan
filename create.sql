@@ -1,27 +1,27 @@
 CREATE TABLE publisher(
-    id INT,
+    id INTEGER AUTO_INCREMENT,
     name TEXT,
     country TEXT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE books(
-    id INT,
+    id INTEGER AUTO_INCREMENT,
     title TEXT,
-    publisher INT,
+    publisher INTEGER,
     PRIMARY KEY(id),
     FOREIGN KEY(publisher) REFERENCES publisher(id)
 );
 
 CREATE TABLE subjects(
-    id INT,
+    id INTEGER AUTO_INCREMENT,
     name TEXT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE books_subjects(
-    book INT,
-    subject INT,
+    book INTEGER,
+    subject INTEGER,
     FOREIGN KEY(book) REFERENCES books(id),
     FOREIGN KEY(subject) REFERENCES subjects(id)
 );
