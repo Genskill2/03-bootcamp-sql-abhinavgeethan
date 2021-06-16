@@ -80,7 +80,7 @@ INSERT INTO books_subjects
 VALUES("2","4");
 
 INSERT INTO books_subjects
-VALUES("2","3")
+VALUES("2","3");
 
 INSERT INTO books_subjects
 VALUES("3","2");
