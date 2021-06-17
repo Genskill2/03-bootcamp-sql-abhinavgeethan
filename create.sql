@@ -1,12 +1,12 @@
 CREATE TABLE publisher(
-    id INTEGER AUTO_INCREMENT,
+    id INTEGER,
     name TEXT,
     country TEXT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE books(
-    id INTEGER AUTO_INCREMENT,
+    id INTEGER,
     title TEXT,
     publisher INTEGER,
     PRIMARY KEY(id),
@@ -14,7 +14,7 @@ CREATE TABLE books(
 );
 
 CREATE TABLE subjects(
-    id INTEGER AUTO_INCREMENT,
+    id INTEGER,
     name TEXT,
     PRIMARY KEY(id)
 );
